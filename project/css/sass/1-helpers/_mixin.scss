@@ -1,0 +1,24 @@
+/*Media Query Mixin For Help*/
+
+@mixin maxSmall {
+    @media (max-width:768px) {
+        @content;        
+    }
+}
+@mixin minSmall {
+    @media (min-width:768px) {
+        @content;
+    }
+}
+@mixin mdiumeSmall {
+    @media (min-width:991px) {
+        @content;        
+    }
+}
+/* Prefix Mixin */ 
+@mixin prefixer($property, $value,$prefixes:() ){
+    @each $perfix in $prefixes{
+        #{'-' + $perfix +'-' + $property}: $value;
+    }
+    #{$property}: $value;
+}

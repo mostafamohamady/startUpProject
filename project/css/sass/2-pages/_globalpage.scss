@@ -1,0 +1,18 @@
+body{
+   font-family:  'Roboto',Helvetica,Arial,sans-serif;
+   background-color: #EEE;
+ }
+ul,ol{
+    list-style:none;
+    padding-left:0;
+    padding-right:0;
+}
+@media #{$maxSmall}{
+    .container {
+      max-width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
